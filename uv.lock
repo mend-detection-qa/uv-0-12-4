@@ -1,0 +1,79 @@
+version = 1
+requires-python = ">= 3.8"
+
+[options]
+exclude-newer = "2026-08-13T00:00:00Z"
+
+resolution-markers = [
+    "python_full_version >= '3.9'",
+    "python_full_version == '3.8.*'",
+]
+
+[[package]]
+name = "anyio"
+version = "4.6.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "idna", specifier = ">=2.8" },
+    { name = "sniffio", specifier = ">=1.1" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/anyio-4.6.0.tar.gz", hash = "sha256:137b4559cbb034f6e0a5d0d3c9c0d4f6f6e1b2a7c5d9e8f3a4b6c7d8e9f0a1b2", size = 165287 }
+
+[[package.wheels]]
+url = "https://files.pythonhosted.org/packages/anyio-4.6.0-py3-none-any.whl"
+hash = "sha256:4b2b1d9e8c7f6a5b4c3d2e1f0a9b8c7d6e5f4a3b2c1d0e9f8a7b6c5d4e3f2a1b"
+size = 90608
+
+[[package]]
+name = "click"
+version = "8.1.8"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/click-8.1.8.tar.gz", hash = "sha256:ed53c9d8a4567f2e27e3c6e8f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b", size = 226950 }
+
+[[package.wheels]]
+url = "https://files.pythonhosted.org/packages/click-8.1.8-py3-none-any.whl"
+hash = "sha256:b07d9f16f4f6d5e4c3b2a1f0e9d8c7b6a5f4e3d2c1b0a9f8e7d6c5b4a3f2e1d0b"
+size = 98188
+
+[[package]]
+name = "idna"
+version = "3.10"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/idna-3.10.tar.gz", hash = "sha256:12f65c9b470abda6dc35cf9f8a7e1a8f7c9e8d7b6a5c4d3e2f1a0b9c8d7e6f5a4b", size = 190490 }
+
+[[package.wheels]]
+url = "https://files.pythonhosted.org/packages/idna-3.10-py3-none-any.whl"
+hash = "sha256:a0d9a3c8e7f6b5d4c3b2a1e0f9d8c7b6a5f4e3d2c1b0f9e8d7c6b5a4f3e2d1c0b"
+size = 70442
+
+[[package]]
+name = "packaging"
+version = "24.2"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/packaging-24.2.tar.gz", hash = "sha256:e9d8c7f6b5a4d3c2b1a0e9f8d7c6b5a4f3e2d1c0b9a8f7e6d5c4b3a2f1e0d9c8b", size = 795952 }
+
+[[package.wheels]]
+url = "https://files.pythonhosted.org/packages/packaging-24.2-py3-none-any.whl"
+hash = "sha256:d0c9b8a7f6e5d4c3b2a1f0e9d8c7b6a5f4e3d2c1b0a9f8e7d6c5b4a3f2e1d0c9b"
+size = 65451
+
+[[package]]
+name = "sniffio"
+version = "1.3.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/sniffio-1.3.1.tar.gz", hash = "sha256:f4a9d8c7e6b5a4c3d2e1f0a9b8c7d6e5f4a3b2c1d0e9f8a7b6c5d4e3f2a1b0c9b", size = 20258 }
+
+[[package.wheels]]
+url = "https://files.pythonhosted.org/packages/sniffio-1.3.1-py3-none-any.whl"
+hash = "sha256:c3b2a1d0e9f8c7b6a5d4e3f2c1b0a9d8e7f6c5b4a3d2e1f0c9b8a7d6e5f4c3b2b"
+size = 10182
+
+[[package]]
+name = "uv-wildcard-probe"
+version = "0.1.0"
+source = { editable = "." }
+dependencies = [
+    { name = "anyio", specifier = "== 4.*", marker = "python_full_version != '3.8.*'" },
+    { name = "click", specifier = "== 8.*" },
+    { name = "packaging", specifier = "== 24.*" },
+]
