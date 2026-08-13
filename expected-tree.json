@@ -1,0 +1,103 @@
+{
+  "generated_at": "2026-08-13T21:31:14Z",
+  "packages": {
+    "anyio": {
+      "dependencies": [
+        "idna",
+        "sniffio"
+      ],
+      "group": "main",
+      "hashes": [
+        "sha256:4b2b1d9e8c7f6a5b4c3d2e1f0a9b8c7d6e5f4a3b2c1d0e9f8a7b6c5d4e3f2a1b"
+      ],
+      "marker": "python_full_version != '3.8.*'",
+      "optional": false,
+      "source": "registry",
+      "source_detail": {
+        "registry_url": "https://pypi.org/simple"
+      },
+      "version": "4.6.0"
+    },
+    "click": {
+      "dependencies": [],
+      "group": "main",
+      "hashes": [
+        "sha256:b07d9f16f4f6d5e4c3b2a1f0e9d8c7b6a5f4e3d2c1b0a9f8e7d6c5b4a3f2e1d0b"
+      ],
+      "marker": null,
+      "optional": false,
+      "source": "registry",
+      "source_detail": {
+        "registry_url": "https://pypi.org/simple"
+      },
+      "version": "8.1.8"
+    },
+    "idna": {
+      "dependencies": [],
+      "group": "main",
+      "hashes": [
+        "sha256:a0d9a3c8e7f6b5d4c3b2a1e0f9d8c7b6a5f4e3d2c1b0f9e8d7c6b5a4f3e2d1c0b"
+      ],
+      "marker": null,
+      "optional": false,
+      "source": "registry",
+      "source_detail": {
+        "registry_url": "https://pypi.org/simple"
+      },
+      "version": "3.10"
+    },
+    "packaging": {
+      "dependencies": [],
+      "group": "main",
+      "hashes": [
+        "sha256:d0c9b8a7f6e5d4c3b2a1f0e9d8c7b6a5f4e3d2c1b0a9f8e7d6c5b4a3f2e1d0c9b"
+      ],
+      "marker": null,
+      "optional": false,
+      "source": "registry",
+      "source_detail": {
+        "registry_url": "https://pypi.org/simple"
+      },
+      "version": "24.2"
+    },
+    "sniffio": {
+      "dependencies": [],
+      "group": "main",
+      "hashes": [
+        "sha256:c3b2a1d0e9f8c7b6a5d4e3f2c1b0a9d8e7f6c5b4a3d2e1f0c9b8a7d6e5f4c3b2b"
+      ],
+      "marker": null,
+      "optional": false,
+      "source": "registry",
+      "source_detail": {
+        "registry_url": "https://pypi.org/simple"
+      },
+      "version": "1.3.1"
+    }
+  },
+  "pm": "uv",
+  "pm_version_tested": "0.12.4",
+  "pm_version_under_test": "0.12.4",
+  "project_metadata": {
+    "groups": [
+      "main"
+    ],
+    "python_constraint": ">= 3.8"
+  },
+  "root": {
+    "dependencies": [
+      "anyio",
+      "click",
+      "packaging"
+    ],
+    "name": "uv-wildcard-probe",
+    "version": "0.1.0"
+  },
+  "schema_version": "1.2",
+  "source_file": "pyproject.toml",
+  "warnings": [
+    "anyio 4.6.0 is conditionally included: marker 'python_full_version != \\'3.8.*\\'' — uv 0.12.4 lockfile_format feature under test.",
+    "resolution-markers in uv.lock cover two branches: python_full_version >= '3.9' and python_full_version == '3.8.*'. anyio is only resolved on the >=3.9 branch.",
+    "uv tool version is NOT pinnable via install-tool versioning. Ensure uv 0.12.4+ is available in the scan environment."
+  ]
+}
