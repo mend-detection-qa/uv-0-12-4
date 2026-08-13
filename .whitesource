@@ -1,0 +1,8 @@
+{
+  "scanSettings": {
+    "configMode": "AUTO",
+    "versioning": {
+      "python": "3.9.21"
+    }
+  }
+}
