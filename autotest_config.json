@@ -43,8 +43,7 @@
       },
       "transitive_dependencies_names_list": {
         "contains": [
-          "idna",
-          "sniffio"
+          "idna"
         ]
       },
       "_comment_dependencies_names_list": "Optional. Check specific libraries in direct dependencies. Operators: eq (==), contains (all items from expected list in actual), in(all items from actual list in expected), nin(actual list does not contain provided libs). If not provided, this check will not be performed.",
